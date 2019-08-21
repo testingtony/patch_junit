@@ -11,8 +11,8 @@ In order to show assertions can produce failures (i.e. they can assert) there ar
 of tests which produce failures in the xml file.
 
 In a CI pipeline this will mark the build as a failure, which is correct but has no quantity to it. 
-If test which are meant to pass fail or less test than expected fail this only shows up by looking at
-the build stats and with a more obvious build starting to fail.
+If tests which are meant to pass fail, or less test sthan expected fail this can only be seen by looking at
+the build stats. 
 
 Enter _Patch JUnit._ Given the details of which tests are meant to fail it can read the junit xml file,
 identify those tests and, if they have failed, mark them as passed, or if they have passed,
